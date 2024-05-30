@@ -1,0 +1,23 @@
+{
+  "name": "moneymanager",
+  "version": "1.0.0",
+  "description": "calculating the amount to repay loans",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devoureyes/moneyManager.git"
+  },
+  "keywords": [
+    "money",
+    "loans"
+  ],
+  "author": "Andrew F <devoureyes@ya.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devoureyes/moneyManager/issues"
+  },
+  "homepage": "https://github.com/Devoureyes/moneyManager#readme"
+}
