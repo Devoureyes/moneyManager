@@ -1,4 +1,7 @@
 const { app, BrowserWindow } = require('electron/main')
+const path = require('path')
+const env = process.env.NODE_ENV || 'development';
+
 
 function createWindow () {
     const win = new BrowserWindow({
@@ -28,7 +31,15 @@ app.whenReady().then(() => {
         }
     })
 })
-
+// If development environment
+if (env === 'development') {
+    try {
+        require('electron-reloader')(module, {
+            debug: true,
+            watchRenderer: true
+        });
+    } catch (_) { console.log('Error'); }
+}
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
         app.quit()
